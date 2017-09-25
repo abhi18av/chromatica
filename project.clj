@@ -9,8 +9,11 @@
                  [org.clojure/clojurescript "1.9.908" :scope "provided"]
                  [com.cognitect/transit-clj "0.8.300"]
                  [org.clojure/tools.namespace "0.2.11"]
+                
+                ;; added the core.async in puppeteer branch
+                 [org.clojure/core.async "0.3.443"]
 
-[environ "1.1.0"]
+                [environ "1.1.0"]
 
                              [com.cemerick/piggieback "0.2.2"]
                              [org.clojure/tools.nrepl "0.2.13"]
@@ -56,7 +59,8 @@
                              :optimizations :none
                              ;:optimizations :advanced :simple :whitespace :none
                              :parallel-build true
-                             :npm-deps {"chalk" "2.1.0"}
+                             :npm-deps {:chalk "2.1.0"
+                                        :puppeteer "0.11.0"}
                              :install-deps true
                              :source-map-timestamp true
                              ;:source-map true
