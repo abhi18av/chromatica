@@ -6,10 +6,23 @@
   :dependencies [[org.clojure/clojure "1.9.0-beta1"]
                  [org.clojure/clojurescript "1.9.908" :scope "provided"]
                  [com.cognitect/transit-clj "0.8.300"]
-                 [org.clojure/tools.namespace "0.2.11"]]
+                 [org.clojure/tools.namespace "0.2.11"]
+
+
+
+                             [com.cemerick/piggieback "0.2.2"]
+                             [org.clojure/tools.nrepl "0.2.13"]
+                             [lein-doo "0.1.7"]
+                             [reloaded.repl "0.2.3"]
+                 ]
 
 
      :plugins [[lein-cljsbuild "1.1.6"]]
+
+
+;              :plugins [ [lein-doo "0.1.7"]]
+
+
 
      :min-lein-version "2.6.1"
 
@@ -27,6 +40,7 @@
   ;;   ;; (browser-repl) live.
 ;    :repl-options {:init-ns user}
 
+      :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
 
     :cljsbuild {:builds
                 [{:id "puppeteer"
@@ -58,3 +72,4 @@
 ;  :main ^:skip-aot chromatica.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
+
