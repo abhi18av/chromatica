@@ -10,7 +10,7 @@
                  [com.cognitect/transit-clj "0.8.300"]
                  [org.clojure/tools.namespace "0.2.11"]
 
-
+[environ "1.1.0"]
 
                              [com.cemerick/piggieback "0.2.2"]
                              [org.clojure/tools.nrepl "0.2.13"]
