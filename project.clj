@@ -12,6 +12,9 @@
                 
                 ;; added the core.async in puppeteer branch
                  [org.clojure/core.async "0.3.443"]
+                  [funcool/promesa "1.9.0"]
+
+
 
                 [environ "1.1.0"]
 
