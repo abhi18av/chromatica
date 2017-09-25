@@ -53,7 +53,7 @@
                              :output-to "resources/public/js/compiled/chromatica.js"
                              :output-dir "resources/public/js/compiled/out"
                              :pretty-print true
-                             :optimizations :simple
+                             :optimizations :none
                              ;:optimizations :advanced :simple :whitespace :none
                              :parallel-build true
                              :npm-deps {"chalk" "2.1.0"}
