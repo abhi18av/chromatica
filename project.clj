@@ -3,7 +3,9 @@
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.9.0-beta1"]
+  :dependencies [
+
+                [org.clojure/clojure "1.9.0-beta1"]
                  [org.clojure/clojurescript "1.9.908" :scope "provided"]
                  [com.cognitect/transit-clj "0.8.300"]
                  [org.clojure/tools.namespace "0.2.11"]
@@ -47,18 +49,18 @@
                   :source-paths ["src/cljc" "src/cljs"]
                   :compiler {:main chromatica.core
                              :target :nodejs
-                                        ;:asset-path "js/compiled/out"
-                                         :output-to "resources/public/js/compiled/chromatica.js"
-                                         :output-dir "resources/public/js/compiled/out"
+                             ;:asset-path "js/compiled/out"
+                             :output-to "resources/public/js/compiled/chromatica.js"
+                             :output-dir "resources/public/js/compiled/out"
                              :pretty-print true
                              :optimizations :simple
-                                        ;:optimizations :advanced :simple :whitespace :none
+                             ;:optimizations :advanced :simple :whitespace :none
                              :parallel-build true
                              :npm-deps {"chalk" "2.1.0"}
                              :install-deps true
                              :source-map-timestamp true
-                                        ;:source-map true
-                             :warnings true}}]}
+                             ;:source-map true
+                             :warnings false}}]}
 
 
                   ;; :compiler {:main cljs.user

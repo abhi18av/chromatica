@@ -18,3 +18,5 @@ pom.xml.asc
 node_modules
 
 .cljs_node_repl
+
+.cljs_rhino_repl
