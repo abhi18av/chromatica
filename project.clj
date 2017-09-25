@@ -63,14 +63,6 @@
                              :warnings false}}]}
 
 
-                  ;; :compiler {:main cljs.user
-                  ;;            :asset-path "js/compiled/out"
-                  ;;            :output-to "resources/public/js/compiled/chromatica.js"
-                  ;;            :output-dir "resources/public/js/compiled/out"
-                  ;;            :source-map-timestamp true}}]}
-
-
-
 ;  :main ^:skip-aot chromatica.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
