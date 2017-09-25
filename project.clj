@@ -44,7 +44,7 @@
                              :install-deps true
                              :source-map-timestamp true
                                         ;:source-map true
-                             :warnings false}}]}
+                             :warnings true}}]}
 
 
                   ;; :compiler {:main cljs.user
